@@ -1,0 +1,165 @@
+:root{
+  --green:#2d7a2d;
+  --green-dark:#1f5f1f;
+  --accent:#8fd4a0;
+  --bg:#f2f7f2;
+  --card:#eaf6ea;
+  --round:10px;
+  --gap:16px;
+  --max-width:1100px;
+  --muted:#666;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background:var(--bg);
+  color:#0b3b0b;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:12px;
+}
+
+/* pequena barra verde no topo (igual ao screenshot) */
+.topbar{
+  height:8px;
+  background:var(--green);
+  width:100%;
+  box-shadow:0 1px 0 rgba(0,0,0,0.06) inset;
+}
+
+/* header com navegação horizontal */
+.site-header{
+  width:100%;
+  max-width:var(--max-width);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background:linear-gradient(180deg,var(--green),var(--green-dark));
+  color:white;
+  padding:10px 16px;
+  border-radius:0 0 var(--round) var(--round);
+}
+
+.brand{
+  font-weight:700;
+  font-size:1.1rem;
+}
+
+.main-nav{display:flex;gap:10px;}
+.main-nav .nav-link{
+  background:transparent;
+  color:white;
+  padding:8px 12px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:600;
+}
+.main-nav .nav-link.active,
+.main-nav .nav-link:hover{
+  background:var(--accent);
+  color:var(--green-dark);
+}
+
+/* container principal */
+.container{
+  width:100%;
+  max-width:var(--max-width);
+  padding:18px;
+}
+
+/* cartão genérico */
+.card{
+  background:var(--card);
+  border-radius:10px;
+  padding:16px;
+  box-shadow:0 1px 0 rgba(0,0,0,0.04) inset;
+  margin-bottom:12px;
+}
+
+/* layout home */
+.home .row{
+  display:flex;
+  gap:16px;
+  justify-content:center;
+  margin-top:12px;
+}
+.feature{width:180px;text-align:center;padding:12px;border-radius:8px;background:white}
+.feature .ico{font-size:30px;margin-bottom:8px}
+
+/* botões */
+.btn{
+  display:inline-block;
+  background:var(--green);
+  color:white;
+  padding:10px 14px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:700;
+}
+
+/* duas colunas (lista + detalhe) */
+.two-column{
+  display:grid;
+  grid-template-columns:320px 1fr;
+  gap:18px;
+  align-items:start;
+}
+
+/* lista lateral */
+.left-panel .orchid-list{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+.orchid-list li{
+  border-bottom:1px solid rgba(0,0,0,0.04);
+}
+.orchid-item{
+  display:block;
+  padding:10px 12px;
+  text-decoration:none;
+  color:var(--green-dark);
+}
+.orchid-item:hover{background:rgba(45,122,45,0.06)}
+
+/* detalhe lado direito */
+.orchid-detail h2{margin-top:0;margin-bottom:12px}
+.orchid-info-row{
+  display:flex;
+  gap:18px;
+  align-items:flex-start;
+  flex-wrap:wrap;
+}
+.orchid-meta{flex:1;min-width:220px}
+.orchid-meta p{margin:6px 0;color:var(--muted)}
+.label{font-weight:700;color:var(--green-dark)}
+.orchid-photo-wrap{width:360px;max-width:40%}
+.orchid-photo{width:100%;height:auto;border-radius:8px;display:block}
+
+/* about / autores */
+.team{display:flex;flex-wrap:wrap;gap:18px;justify-content:center}
+.author{width:260px;text-align:center;padding:14px;border-radius:8px;background:white}
+.author img{width:140px;height:140px;border-radius:50%;object-fit:cover}
+
+/* footer */
+footer{
+  width:100%;
+  max-width:var(--max-width);
+  background:var(--green-dark);
+  color:white;
+  padding:10px;
+  text-align:center;
+  border-radius:8px;
+  margin-bottom:18px;
+}
+
+/* responsivo */
+@media (max-width:900px){
+  .two-column{grid-template-columns:1fr; }
+  .orchid-photo-wrap{width:100%;max-width:100%}
+  .main-nav{gap:6px}
+}

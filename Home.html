@@ -1,58 +1,49 @@
 <!DOCTYPE html>
-<html lang="pt-pt">
+<html lang="pt">
 <head>
-<title>Home</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="Dicas sobre cultivo de Orquidias">
-    <meta name="keywords" content="Jardinagem, Plantas, Flores">
-    <meta name="author" content="Diogo Mole"> 
-    <meta name="author" content="Rita Pereira"> 
-    <style>
-    /* Estilização básica */
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    header {
-      background-color: orange;
-      padding: 10px 20px;
-    }
-
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-    }
-
-    nav ul li {
-      margin-right: 20px;
-    }
-
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav ul li a:hover {
-      color: #ffcc00;
-    }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Orquídeas para Todos - Início</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <header>
-        <nav>
-        <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Serviços</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
-        </nav>
-    </header>
+  <div class="topbar"></div>
+
+  <header class="site-header">
+    <div class="brand">Orquídeas para Todos</div>
+    <nav class="main-nav">
+      <a href="Home.html" class="nav-link active">Início</a>
+      <a href="Orquideas.html" class="nav-link">Orquídeas</a>
+      <a href="About.html" class="nav-link">Sobre</a>
+    </nav>
+  </header>
+
+  <main class="container home">
+    <section class="intro card">
+      <h2>Bem-vindo!</h2>
+      <p>Este site apresenta uma colecção de orquídeas com várias características (género, tipo, luminosidade, temperatura, humidade e tamanho).</p>
+      <p>Podes explorar as orquídeas, ver detalhes de cada uma e, mais tarde, editar/introduzir novas orquídeas quando avançarmos para a fase com JavaScript.</p>
+      <p><a class="btn" href="orquideas.html">Ver Orquídeas</a></p>
+    </section>
+
+    <section class="features card row">
+      <div class="feature">
+        <div class="ico">🌿</div>
+        <h3>Géneros</h3>
+      </div>
+      <div class="feature">
+        <div class="ico">🌼</div>
+        <h3>Tipos</h3>
+      </div>
+      <div class="feature">
+        <div class="ico">☀️</div>
+        <h3>Luminosidade</h3>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Orquídeas para Todos — Projeto Laboratório</p>
+  </footer>
 </body>
 </html>
