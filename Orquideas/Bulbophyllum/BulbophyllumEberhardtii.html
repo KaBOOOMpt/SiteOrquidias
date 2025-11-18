@@ -4,50 +4,66 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bulbophyllum eberhardtii</title>
-  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Caminho correto para o CSS -->
+  <link rel="stylesheet" href="../../styles.css" />
 </head>
 
 <body>
-  <h1 class="name">Bulbophyllum eberhardtii</h1>
 
-  <section class="orchid-info">
-      <div class="characteristics">
-          <div class="characteristic">
-              <span class="label">Género:</span>
-              <span class="genus">Bulbophyllum</span>
-          </div>
-          <div class="characteristic">
-              <span class="label">Tipo:</span>
-              <span class="type">Espécie</span>
-          </div>
-          <div class="characteristic">
-              <span class="label">Luminosidade:</span>
-              <span class="luminosity">Luz filtrada</span>
-          </div>
-          <div class="characteristic">
-              <span class="label">Temperatura:</span>
-              <span class="temperature">Muito quente</span>
-          </div>
-          <div class="characteristic">
-              <span class="label">Humidade:</span>
-              <span class="humidity">60% a 80%</span>
-          </div>
-          <div class="characteristic">
-              <span class="label">Tamanho:</span>
-              <span class="size">Grande</span>
-          </div>
+  <!-- Barra superior verde -->
+  <div class="topbar"></div>
+
+  <!-- Header igual ao resto do site -->
+  <header class="site-header">
+    <div class="brand">Orquídeas para Todos</div>
+    <nav class="main-nav">
+      <a href="../../Home.html" class="nav-link">Início</a>
+      <a href="../../Orquideas.html" class="nav-link">Orquídeas</a>
+      <a href="../../About.html" class="nav-link">Sobre</a>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main class="container card orchid-detail">
+
+      <h1 class="name">Bulbophyllum eberhardtii</h1>
+
+      <div class="orchid-info-row">
+        
+        <!-- Características -->
+        <div class="orchid-meta">
+            <p><span class="label">Género:</span> Bulbophyllum</p>
+            <p><span class="label">Tipo:</span> Espécie</p>
+            <p><span class="label">Luminosidade:</span> Luz filtrada</p>
+            <p><span class="label">Temperatura:</span> Muito quente</p>
+            <p><span class="label">Humidade:</span> 60% a 80%</p>
+            <p><span class="label">Tamanho:</span> Grande</p>
+        </div>
+
+        <!-- Foto -->
+        <div class="orchid-photo-wrap">
+            <img 
+              class="orchid-photo" 
+              src="../../images/bulbophyllum-eberhardtii.jpg" 
+              alt="Bulbophyllum eberhardtii">
+        </div>
+
       </div>
 
-      <img class="orchid-photo" src="/SiteOrquidias/images/bulbophyllum-eberhardtii.jpg" alt="">
-  </section>
+      <!-- Botões voltar -->
+      <div style="margin-top: 20px; display: flex; gap: 10px;">
+        <a class="btn" href="Bulbophyllum.html">← Voltar ao Género</a>
+        <a class="btn" href="../../Generos.html">Géneros</a>
+      </div>
 
-  <section class="back-links">
-      <a href="Bulbophyllum.html">← Voltar ao género</a>
-      <a href="Generos.html">Géneros</a>
-  </section>
+  </main>
 
+  <!-- Footer igual ao resto do site -->
   <footer>
-      <a class="about-link" href="About.html">Sobre</a>
+    <p>&copy; 2025 Orquídeas para Todos — Projeto Laboratório</p>
   </footer>
+
 </body>
 </html>
+
